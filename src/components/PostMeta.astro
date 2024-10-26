@@ -1,8 +1,8 @@
 ---
-import { formatDateToYYYYMMDD } from '../utils/date-utils'
 import { Icon } from 'astro-icon/components'
-import { i18n } from '../i18n/translation'
 import I18nKey from '../i18n/i18nKey'
+import { i18n } from '../i18n/translation'
+import { formatDateToYYYYMMDD } from '../utils/date-utils'
 import { url } from '../utils/url-utils'
 
 interface Props {
@@ -20,7 +20,7 @@ const className = Astro.props.class
     <!-- publish date -->
     <div class="flex items-center">
         <div class="meta-icon"
-        >
+        > ol
             <Icon name="material-symbols:calendar-today-outline-rounded" class="text-xl"></Icon>
         </div>
         <span class="text-50 text-sm font-medium">{formatDateToYYYYMMDD(published)}</span>
